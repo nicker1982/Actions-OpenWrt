@@ -20,4 +20,5 @@ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.con
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 
 # 自定义第三方插件
-git clone https://github.com/ximiTech/luci-app-msd_lite.git package/lean/luci-app-msd_lite
+#git clone https://github.com/ximiTech/luci-app-msd_lite.git package/lean/luci-app-msd_lite
+#git clone https://github.com/DongyangHu/luci-app-poweroff.git package/lean/luci-app-poweroff
