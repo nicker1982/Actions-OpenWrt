@@ -23,3 +23,4 @@ sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 git clone https://github.com/ximiTech/luci-app-msd_lite.git package/lean/luci-app-msd_lite
 git clone https://github.com/DongyangHu/luci-app-poweroff.git package/lean/luci-app-poweroff
 git clone https://github.com/neophack/luci-app-ssr-plus.git package/lean/luci-app-ssr-plus
+git clone https://github.com/chenmozhijin/luci-app-socat.git package/lean/luci-app-socat
