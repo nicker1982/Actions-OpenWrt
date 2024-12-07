@@ -18,3 +18,6 @@
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
+
+# 自定义第三方插件
+git clone https://github.com/ximiTech/luci-app-msd_lite.git package/lean/luci-app-msd_lite
