@@ -20,7 +20,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: x86_64.config
+  CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -35,21 +35,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@main
-    - name: Free Disk Space (Ubuntu)
-      uses: jlumbroso/free-disk-space@main
-      with:
-        # this might remove tools that are actually needed,
-        # if set to "true" but frees about 6 GB
-        tool-cache: false
 
-        # all of these default to true, but feel free to set to
-        # "false" if necessary for your workflow
-        android: true
-        dotnet: true
-        haskell: true
-        large-packages: true
-        docker-images: true
-        swap-storage: true
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
@@ -163,5 +149,6 @@ jobs:
       with:
         retain_days: 0
         keep_minimum_runs: 2
+
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
