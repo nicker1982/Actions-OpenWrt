@@ -29,10 +29,10 @@ sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/' feeds/luci/collections/luci/Makefile
 
 #删除自定义源默认的 wwan源码
-rm -rf package/wwan
+#rm -rf package/wwan
 
 #拉取三方wwan源码
-git clone https://github.com/Siriling/5G-Modem-Support.git package/lean/5G-Modem-Support
+#git clone https://github.com/Siriling/5G-Modem-Support.git package/lean/5G-Modem-Support
 
 # 移除 openwrt feeds 自带的核心包
 rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
