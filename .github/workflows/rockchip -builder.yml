@@ -146,8 +146,10 @@ jobs:
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
         touch release.txt
         [ ${UPLOAD_GOFILE} = true && ${{ steps.gofile.outputs.url }} ] && echo "🔗 [GoFile](${{ steps.gofile.outputs.url }})" >> release.txt
-        echo "## 管理地址:192.168.1.1 " >> release.txt
-        echo "## 默认用户:root  默认密码:password " >> release.txt
+        echo "## openwrt-rockchip-opc-HT2" >> release.txt
+        echo "-管理地址:192.168.1.1" >> release.txt
+        echo " 默认用户:root" >> release.txt
+        echo " 默认密码:password" >> release.txt
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
