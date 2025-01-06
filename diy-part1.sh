@@ -25,3 +25,4 @@ sed -i '$a src-git smpackage https://github.com/kenzok8/small-package' feeds.con
 #git clone https://github.com/neophack/luci-app-ssr-plus.git package/lean/luci-app-ssr-plus
 #git clone https://github.com/chenmozhijin/luci-app-socat.git package/lean/luci-app-socat
 git clone https://github.com/momokind/luci-app-hypermodem.git package/lean/luci-app-hypermodem
+git clone https://github.com/Siriling/5G-Modem-Support.git package/lean/5G-Modem-Support/luci-app-modem
