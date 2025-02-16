@@ -6,7 +6,7 @@
 # See /LICENSE for more information.
 #
 # https://github.com/P3TERX/Actions-OpenWrt
-# File name: diy-part1.sh
+# File name: diy-part5.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
@@ -28,4 +28,10 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 # 删除旧主题
 rm -rf feeds/kenzo/luci-theme-argon
 rm -rf package/lean/luci-theme-argon
-
+# 自定义第三方插件
+#git clone https://github.com/ximiTech/luci-app-msd_lite.git package/lean/luci-app-msd_lite
+#git clone https://github.com/DongyangHu/luci-app-poweroff.git package/lean/luci-app-poweroff
+#git clone https://github.com/neophack/luci-app-ssr-plus.git package/lean/luci-app-ssr-plus
+#git clone https://github.com/chenmozhijin/luci-app-socat.git package/lean/luci-app-socat
+git clone https://github.com/momokind/luci-app-hypermodem.git package/lean/luci-app-hypermodem
+git clone https://github.com/qianlyun123/luci-app-modem.git package/lean/luci-app-modem
