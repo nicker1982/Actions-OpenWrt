@@ -20,7 +20,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: HT2.config
+  CONFIG_FILE: c526a.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -146,7 +146,7 @@ jobs:
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
         touch release.txt
         [ ${UPLOAD_GOFILE} = true && ${{ steps.gofile.outputs.url }} ] && echo "🔗 [GoFile](${{ steps.gofile.outputs.url }})" >> release.txt
-        echo "## openwrt-rockchip-opc-HT2" >> release.txt
+        echo "## openwrt-Hwifi-C526a" >> release.txt
         echo "- 管理地址:192.168.1.1" >> release.txt
         echo "  默认用户:root" >> release.txt
         echo "  默认密码:password" >> release.txt
