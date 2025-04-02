@@ -17,4 +17,4 @@
 # 自定义第三方插件
 git clone https://github.com/chenmozhijin/luci-app-socat.git package/luci-app-socat
 git clone https://github.com/qlljcf666/luci-app-modem.git package/luci-app-modem
-#git clone https://github.com/Azq2/openwrt-usbmodem.git package/openwrt-usbmodem
+git clone https://github.com/Siriling/5G-Modem-Support.git package/5G-Modem-Support
