@@ -12,7 +12,7 @@
 
 ### 添加第三方订阅源
 #sed -i '$a src-git-full small https://github.com/kenzok8/small-package' feeds.conf.default
-
+#echo 'src-git modem https://github.com/FUjr/modem_feeds.git;main' >> feeds.conf.default
 
 # 自定义第三方插件
 git clone https://github.com/chenmozhijin/luci-app-socat.git package/luci-app-socat
