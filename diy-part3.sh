@@ -18,3 +18,4 @@
 git clone https://github.com/chenmozhijin/luci-app-socat.git package/luci-app-socat
 #git clone https://github.com/qianlyun123/luci-app-modem.git package/luci-app-modem
 #git clone https://github.com/Siriling/5G-Modem-Support.git package/5G-Modem-Support
+git clone https://github.com/linkease/istore.git package/istore
