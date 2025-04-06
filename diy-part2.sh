@@ -27,13 +27,6 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lea
 
 # 替换默认主题为 luci-theme-argon
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
-
-#删除自定义源默认的 wwan源码
-#rm -rf package/wwan
-
-#拉取三方wwan源码
-#git clone https://github.com/Siriling/5G-Modem-Support.git package/5G-Modem-Support
-
 # 移除 openwrt feeds 自带的核心包
 rm -rf feeds/packages/net/{xray-core,v2ray-core,v2ray-geodata,sing-box}
 git clone https://github.com/sbwml/openwrt_helloworld package/helloworld
