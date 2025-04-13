@@ -146,7 +146,7 @@ jobs:
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
         touch release.txt
         [ ${UPLOAD_GOFILE} = true && ${{ steps.gofile.outputs.url }} ] && echo "🔗 [GoFile](${{ steps.gofile.outputs.url }})" >> release.txt
-        echo "## Immortalwrt21.02-cmcc rax3000m emmc" >> release.txt
+        echo "## Immortalwrt21.02-cmcc rax3000m nand" >> release.txt
         echo "- 管理地址:192.168.10.1" >> release.txt
         echo "  默认用户:root" >> release.txt
         echo "  默认密码:空" >> release.txt
