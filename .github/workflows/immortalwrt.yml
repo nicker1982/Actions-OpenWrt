@@ -20,7 +20,7 @@ env:
   REPO_URL: https://github.com/immortalwrt/immortalwrt
   REPO_BRANCH: openwrt-24.10
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  CONFIG_FILE: cmcc_rax3000m.config
   DIY_P1_SH: diy-part3.sh
   DIY_P2_SH: diy-part4.sh
   UPLOAD_BIN_DIR: false
@@ -146,7 +146,7 @@ jobs:
         echo "release_tag=$(date +"%Y.%m.%d-%H%M")" >> $GITHUB_OUTPUT
         touch release.txt
         [ ${UPLOAD_GOFILE} = true && ${{ steps.gofile.outputs.url }} ] && echo "🔗 [GoFile](${{ steps.gofile.outputs.url }})" >> release.txt
-        echo "## Immortalwrt24.10 newifi d2" >> release.txt
+        echo "## Immortalwrt24.10 cmcc_rax3000m" >> release.txt
         echo "- 管理地址:192.168.10.1" >> release.txt
         echo "  默认用户:root" >> release.txt
         echo "  默认密码:空" >> release.txt
