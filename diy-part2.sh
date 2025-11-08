@@ -29,8 +29,6 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lea
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 #删掉自带geoview
 rm -rf feeds/packages/net/geoview
-# 更新 golang 1.22 版本 
+# 更新 golang 25.x 版本 
 rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 20.x feeds/packages/lang/golang
-# 删除冲突的插件
-rm -rf feeds/smpackage/{base-files,dnsmasq,firewall*,fullconenat,libnftnl,nftables,ppp,opkg,ucl,upx,vsftpd*,miniupnpd-iptables,wireless-regdb}
+git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/lang/golang
