@@ -67,7 +67,7 @@ jobs:
         sudo -E apt-get -qq clean
         sudo timedatectl set-timezone "$TZ"
         sudo chmod 777 /mnt
-        df -Th
+        df -hT
 
     - name: Clone source code
       working-directory: /mnt
