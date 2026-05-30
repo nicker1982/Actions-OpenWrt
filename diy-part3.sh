@@ -20,3 +20,4 @@ git clone https://github.com/chenmozhijin/luci-app-socat.git package/luci-app-so
 #git clone https://github.com/Siriling/5G-Modem-Support.git package/5G-Modem-Support
 #git clone https://github.com/linkease/istore.git package/istore
 git clone https://github.com/sirpdboy/luci-app-ddns-go.git package/luci-app-ddns-go
+git clone https://github.com/stackia/rtp2httpd.git package/rtp2httpd
